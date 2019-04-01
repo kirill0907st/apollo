@@ -1,0 +1,113 @@
+.logo {
+	text-align: center;
+	padding: 90px 0 50px 0;
+	text-transform: uppercase;
+	font-weight: 700;
+	@media (min-width : 992px) {
+		padding-top: 60px;
+	}
+}
+.logo__name {
+	font-size: 32px;
+	line-height: 22px;
+	letter-spacing: 7.5px;
+	color: #000000;
+	margin-bottom: 11px;
+
+	@media (min-width : 768px) {
+		font-size: 38px;
+		line-height: 26px;
+		letter-spacing: 10.3px;
+	}
+}
+.logo__slogan {
+	font-size: 14px;
+	line-height: 15px;
+	letter-spacing: 8px;
+	color: #a1bbd9;
+
+	@media (min-width : 768px) {
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 10.3px;
+	}
+}
+.nav{
+	background-color: #35577d;
+	box-shadow: 0px 5px 10px 0px rgba(42,73,109,1);
+	letter-spacing: 3px;
+	font-size: 14px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	color: #fff;
+	@media (min-width : 992px) {
+   	background-color: #38383a;
+		display: flex;
+		padding: 23px 0;
+	}
+	@media (min-width : 992px) {
+		position: relative;
+	}
+   ul{
+   	display: flex;
+   	justify-content: space-between;
+   	display: none;
+   	margin-bottom: 0;
+   	@media (min-width : 992px) {
+			display: flex;
+		}
+   	li{
+   		a{
+   			text-decoration: none;
+				font-weight: 700;
+				display: block;
+				text-transform: uppercase;
+				color: #ffffff;
+				.border-direct(@bottom:1px,@color:#496d95);
+	   		padding: 25px 15px;
+	   		
+				&:hover,&.active{
+					color: #ffcc00;
+				}
+				@media (min-width : 992px) {
+					display: inline;
+					padding: 0;
+					border:none;
+				}
+   		}
+   	}
+   }
+}
+.nav__toggle-button{
+	display: block;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: #38383a;
+	box-shadow: 0px 5px 10px 0px #2a486d;
+	padding: 23px 15px;
+	cursor: pointer;	
+	@media (min-width : 992px) {
+		display: none;
+	}
+	.fa-bars{
+		float: right;
+		font-size: 20px;
+	}
+}
+.nav__toggle-button--active{
+	background-color: #16385f;
+}
+.container--nopadding{
+	padding: 0;
+	width: 100%;
+	@media (min-width : 992px) {
+		padding: 0 15px;
+		width: 970px;
+	}
+	@media (min-width : 1170px) {
+		width: 1170px;
+	}
+}
